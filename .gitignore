@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+*.pyc
+*.pyo
+*.log
+*.orig
+*.rej
+.ipynb_checkpoints/
+scratch/
+tmp/

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77.0.3,<81.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vllm-general-plugin-template"
+version = "0.1.0"
+description = "Minimal standalone template for vLLM optimization plugins"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+authors = [{name = "Shuhao Prototype"}]
+
+[project.scripts]
+vllm-template-serve = "vllm_general_plugin_template.launcher:main"
+
+[project.entry-points."vllm.general_plugins"]
+general_plugin_template = "vllm_general_plugin_template.plugin:register_plugin"
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "pytest>=8.0", "ruff>=0.11"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
