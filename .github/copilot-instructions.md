@@ -20,6 +20,21 @@
 - Update `README.md` if the recommended plugin boundary changes.
 - Do not create `.venv` or `venv`.
 
+## Research Ideation Reference
+
+- When designing new plugin ideas from this template, you may consult
+	`/home/shuhao/private-materials` as private reference material.
+- Prioritize Shuhao's prior research results and technical summaries,
+	especially under `汇报材料/26年学术委员会演讲/`, `项目文档/内部项目/`,
+	`项目文档/纵向项目/`, `项目文档/横向项目/`, and `申报材料/`.
+- Use those materials to inspire reusable optimization patterns, evaluation
+	checklists, and problem framing for derived repositories.
+- Do **not** copy private material verbatim into this template, do **not** move
+	files out of `private-materials`, and do **not** present proposal content as
+	validated implementation results.
+- Translate any borrowed idea into clean, reusable plugin seams instead of
+	embedding repository-specific private context into the template itself.
+
 ## Testing
 
 ```bash
